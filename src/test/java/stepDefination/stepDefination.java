@@ -39,6 +39,8 @@ public class stepDefination extends Utils {
 	public void user_calls_with_http_request(String resource, String method) {
 	    // Write code here that turns the phrase above into concrete actions
 		APIResources resourceAPI = APIResources.valueOf(resource); 
+		
+		System.out.println("Changes done by ANiket to check in git");
 		System.out.println(resourceAPI.getResource());
 		
 		res =new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
